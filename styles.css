@@ -74,6 +74,10 @@ hr {
   border-radius: 6px;
 }
 
+#notification {
+  font-size: 12px;
+}
+
 /* .copy-btn {
   display: flex;
   justify-content: space-around;
