@@ -30,3 +30,33 @@ generatePassword.addEventListener('click', function printCharacters() {
   passwordOne.textContent = generateRandomPassword();
   passwordTwo.textContent = generateRandomPassword();
 });
+
+// By clickin on the result of password 1 you'll copy the result to the clipboard
+function copyTextFromButtonOne() {
+  const element = document.getElementById('password1');
+  const text = element.textContent;
+
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      console.log('Text copied to clipboard');
+    })
+    .catch((error) => {
+      console.error('Error copying text: ', error);
+    });
+}
+
+// By clickin on the result of password 2 you'll copy the result to the clipboard
+function copyTextFromButtonTwo() {
+  const element = document.getElementById('password2');
+  const text = element.textContent;
+
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      console.log('Text copied to clipboard');
+    })
+    .catch((error) => {
+      console.error('Error copying text: ', error);
+    });
+}
