@@ -26,18 +26,15 @@
       <p>Never use an insecure password again.</p>
       <button id="generate-password">Generate passwords</button>
       <hr />
-      <div class="password">
-        <p id="password1"></p>
-        <p id="password2"></p>
+     <div class="password">
+        <p
+          id="password1"
+          onclick="copyTextFromButtonOne()"></p>
+        <p
+          id="password2"
+          onclick="copyTextFromButtonTwo()"></p>
       </div>
-      <!-- <div class="copy-btn">
-        <button id="copy-one">COPY</button>
-        <button
-          id="copy-two"
-          onclick="copyTwo()">
-          COPY
-        </button>
-      </div> -->
+      <p id="notification">*click on the desired password to copy the clipboard</p>
       <script src="index.js"></script>
     </div>
   </body>
