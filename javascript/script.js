@@ -11,9 +11,11 @@ passwordOneEl.addEventListener('click', copyText);
 passwordTwoEl.addEventListener('click', copyText);
 
 function getRandomCharacter() {
-  let randomCharacter = Math.floor(Math.random() * characters.length);
+  return characters[Math.floor(Math.random() * characters.length)];
 
-  return characters[randomCharacter];
+  /* Before refactoring:
+let randomCharacter = Math.floor(Math.random() * characters.length);
+return characters[randomCharacter]; */
 }
 
 function getRandomPassword() {
@@ -28,11 +30,9 @@ function renderPassword() {
   passwordOneEl.textContent = getRandomPassword();
   passwordTwoEl.textContent = getRandomPassword();
 }
-
+// Copy the text inside the text field
 function copyText(e) {
-  const element = e.target;
+  navigator.clipboard.writeText(e.target.textContent);
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(element.textContent);
   alert('Password has been copied.');
 }
