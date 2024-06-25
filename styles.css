@@ -9,7 +9,6 @@ body {
   padding: 115px 52px;
   background-color: #ecfdf5;
   max-width: 550px;
-  /* height: 550px; */
   margin: 100px auto;
 }
 
@@ -49,7 +48,7 @@ button:hover {
 }
 
 hr {
-  margin: 50px 0;
+  margin: 25px 0;
   color: #d5d4d8;
 }
 
@@ -60,8 +59,7 @@ hr {
   cursor: pointer;
 }
 
-#password1,
-#password2 {
+.password-field {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 25px;
@@ -77,9 +75,3 @@ hr {
 #notification {
   font-size: 12px;
 }
-
-/* .copy-btn {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-} */
